@@ -214,7 +214,8 @@ footer a {
     font-weight: 600;
   }
   table {
-    margin-left: 20%;
+    margin-block: 10%;
+    margin-inline: auto;
     width: 60%;
   }
   input {
@@ -234,19 +235,29 @@ footer a {
     margin-right: 6px;
   }
 }
-@media screen and (min-width: 901px) {
-  h1 {
-    font-size: 6rem;
+@media screen and (min-width: 1200px) {
+  header {
+    text-align: initial;
   }
-  header div img {
+  header div,
+  header p,
+  header nav {
     display: inline-block;
   }
-  header nav {
-    margin-left: 60%;
+  header div img {
+    vertical-align: middle;
+    margin: 0;
   }
-  table {
-    width: 60%;
-    margin-left: 20%;
+  header div,
+  header nav {
+    width: 50%;
+    margin-right: -4px;
+  }
+  header nav {
+    text-align: right;
+  }
+  h1 {
+    font-size: 6rem;
   }
   iframe,
   section {
@@ -254,7 +265,19 @@ footer a {
     display: inline-block;
     vertical-align: top;
   }
+  section,
+  iframe {
+    height: 200px;
+  }
   section {
-    height: 155px;
+    border-radius: 20px;
+  }
+  section h2 {
+    background-color: rgb(154, 154, 154);
+  }
+  aside div {
+    width: 33.333%;
+    display: inline-block;
+    margin-right: -4px;
   }
 }
