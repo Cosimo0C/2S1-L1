@@ -200,22 +200,32 @@ footer {
 footer a {
   color: fuchsia;
 }
-@media screen and (min-width: 576px) and (max-width: 899px) {
+@media screen and (min-width: 768px) {
   h1 {
-    font-size: 5.5rem;
+    font-size: 6rem;
+  }
+  article p,
+  ul,
+  ol,
+  article h2 {
+    font-size: 2rem;
+  }
+  article h2 {
+    font-weight: 600;
   }
   table {
-    margin-left: 25%;
+    margin-left: 20%;
+    width: 60%;
   }
   input {
-    width: 60%;
+    width: 70%;
   }
   button {
     width: 20%;
   }
   input,
   button {
-    height: 40px;
+    height: 45px;
   }
   section h2 {
     background-color: grey;
