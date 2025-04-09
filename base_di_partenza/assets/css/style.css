@@ -281,3 +281,19 @@ footer a {
     margin-right: -4px;
   }
 }
+@media print {
+  header,
+  iframe,
+  section,
+  aside,
+  footer {
+    display: none;
+  }
+  main {
+    border: none;
+    box-shadow: none;
+  }
+  table {
+    table-layout: initial;
+  }
+}
